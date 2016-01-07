@@ -1,0 +1,16 @@
+[
+{
+  "modid": "testmod",
+  "name": "TestMod",
+  "description": "This is not a test.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ParkerMc","piecrafter314","CircuitLord"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
