@@ -1,30 +1,30 @@
-package com.test;
+package com.orchard.randommine;
+
+import com.ParkerMc.tools.Register;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.Side;;
 
-import com.test.ItemRendering;
-
-@Mod(modid = Test.MODID, version = Test.VERSION, name = "test")
-public class Test 
+@Mod(modid = RandomMine.MODID, version = RandomMine.VERSION, name = "RandomMine")
+public class RandomMine 
 {
 
-	public static final String MODID = "test";
+	public static final String MODID = "randommine";
 	public static final String VERSION = "1.0";
 	
-	@Mod.Instance(Test.MODID)
-	public static Test instance;
+	@Mod.Instance(RandomMine.MODID)
+	public static RandomMine instance;
 	
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
-		ModBlocks.preInitCommon();
-		ModItems.preInitCommon();
+		Registering.add();
+		Register.load();
 	}
 	@EventHandler
 	public void init(FMLInitializationEvent event)
@@ -32,7 +32,7 @@ public class Test
 		Recipes.add();
 		if(event.getSide() == Side.CLIENT)
 		{
-		ItemRendering.start();
+			Register.render(RandomMine.MODID);
 		}
 	}
 	

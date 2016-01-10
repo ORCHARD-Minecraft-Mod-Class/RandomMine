@@ -1,4 +1,4 @@
-package com.test.blocks;
+package com.orchard.randommine.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

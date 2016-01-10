@@ -1,7 +1,7 @@
 {
 "parent": "builtin/generated",
 "textures": {
-"layer0": "test:items/Chocolate"
+"layer0": "randommine:items/Chocolate"
 },
 "display": {
 "thirdperson": {

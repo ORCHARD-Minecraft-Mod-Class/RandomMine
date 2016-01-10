@@ -1,8 +1,6 @@
-package com.test;
+package com.orchard.randommine;
 
-import com.test.ModBlocks;
-import com.test.ModItems;
-
+import com.ParkerMc.tools.Register;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -17,20 +15,20 @@ public class Recipes {
 	//	 "PPP",
 	//	 'P', Items.ender_pearl
 	 //});	
-			GameRegistry.addShapelessRecipe(new ItemStack(ModItems.itemChocolate), new Object[] {
+			GameRegistry.addShapelessRecipe(new ItemStack(Register.mitems.get("ItemChocolate")), new Object[] {
 					new ItemStack(Items.sugar),
 					new ItemStack(Items.dye, 3)
 				});
-			ItemStack C = new ItemStack(ModItems.itemChocolate);
+			ItemStack C = new ItemStack(Register.mitems.get("ItemChocolate"));
 			
-			GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.blockChoclate), new Object[] {
+			GameRegistry.addShapelessRecipe(new ItemStack(Register.mblocks.get("BlockChoclate")), new Object[] {
 					C,C,C,C,C,C,C,C,C
 				});
 			
 			//From http://minecraft.gamepedia.com/Mods/Creating_mods/Adding_a_recipe
-			GameRegistry.addRecipe(new ItemStack(Blocks.end_stone, 64), new Object[] { "W $", " S ", "s E", 'W', new ItemStack(Blocks.log, 1, 2), '$', Items.stick, 'S', Blocks.sand, 's', Blocks.sapling, 'E', Items.ender_pearl });
+		
 			
-			GameRegistry.addRecipe(new ItemStack(ModBlocks.blockX, 1), new Object[] {
+			GameRegistry.addRecipe(new ItemStack(Register.mblocks.get("BlockX"), 1), new Object[] {
 				 "T T",
 				 " T ",
 				 "T T",
