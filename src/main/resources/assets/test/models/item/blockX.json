@@ -1,5 +1,5 @@
 {
-    "parent": "randommine:block/blockX",
+    "parent": "test:block/blockX",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

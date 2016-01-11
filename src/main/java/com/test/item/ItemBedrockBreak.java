@@ -1,4 +1,4 @@
-package com.orchard.randommine.item;
+package com.test.item;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;

@@ -1,4 +1,4 @@
-package com.orchard.randommine.item;
+package com.test.item;
 
 //This is where you import any assets you need.
 import net.minecraft.item.ItemFood;

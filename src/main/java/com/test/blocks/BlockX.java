@@ -1,5 +1,5 @@
 //This is the package (folder) your blocks are in. Instead of slashes (/) programmers use "."
-package com.orchard.randommine.blocks;
+package com.test.blocks;
  
 //This is where you import all the things you will need in your program.
 import net.minecraft.block.Block;
