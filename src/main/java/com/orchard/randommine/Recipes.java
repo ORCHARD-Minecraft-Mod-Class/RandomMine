@@ -1,7 +1,4 @@
-package com.test;
-
-import com.test.ModBlocks;
-import com.test.ModItems;
+package com.orchard.randommine;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;

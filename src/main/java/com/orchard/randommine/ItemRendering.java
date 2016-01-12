@@ -1,14 +1,13 @@
-package com.test;
+package com.orchard.randommine;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import com.test.Test;
 
 public class ItemRendering {
 	private static void registerItemRendering(String name)
 	{
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(GameRegistry.findItem(Test.MODID, name), 0, new ModelResourceLocation("test:" + name, "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(GameRegistry.findItem(RandomMine.MODID, name), 0, new ModelResourceLocation(RandomMine.MODID+":" + name, "inventory"));
 
 	}
 	public static void start()
