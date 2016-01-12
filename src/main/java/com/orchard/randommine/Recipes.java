@@ -8,12 +8,24 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class Recipes {
 	public static void add()
 	{
-	// GameRegistry.addRecipe(new ItemStack(StartupCommon.blockEnder, 1), new Object[] {
+		
+		//Copy the code below and paste it anywhere at the bottom of the program.
+		//replace "myBlock" with whatever the output of the recipe will be.
+		//replace "item_name" with whatever thing your block will be crafted with.
+		//remove ('A', Items.item_name2) if you only want to craft your block with one type of item/block. Also remove the comma after the first (item_name)
+		
+		
+	//  GameRegistry.addRecipe(new ItemStack(ModBlocks.myBlock, 1), new Object[] {
 	//	 "PPP",
+	//	 "AAA",
 	//	 "PPP",
-	//	 "PPP",
-	//	 'P', Items.ender_pearl
-	 //});	
+	//	 'P', Items.item_name,
+	//	 'A', Items.item_name2
+	//   });	
+		
+		
+		
+		
 			GameRegistry.addShapelessRecipe(new ItemStack(ModItems.itemChocolate), new Object[] {
 					new ItemStack(Items.sugar),
 					new ItemStack(Items.dye, 3)
@@ -33,6 +45,19 @@ public class Recipes {
 				 "T T",
 				 'T', Blocks.tnt
 			});
+		
+			//Put your block or item recipes down here.
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 	}
 }
