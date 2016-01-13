@@ -9,3 +9,4 @@ $ cat .gitignore
 !.gitignore
 !setup.bat
 !setup.command
+!JAVA_HOME Error Fix.bat
