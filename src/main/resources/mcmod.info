@@ -1,8 +1,8 @@
 [
 {
-  "modid": "testmod",
-  "name": "TestMod",
-  "description": "This is not a test.",
+  "modid": "randommine",
+  "name": "RandomMine",
+  "description": "A mod that adds random stuff.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
