@@ -10,7 +10,7 @@ public class ModBlocks {
 //public static Block(name) block(name);
 	public static BlockChoclate blockChoclate;
 	public static BlockX blockX;
-	
+	public static BlockFaceSilly BlockFaceSilly;
 	
 	
     public static void preInitCommon() {
@@ -23,6 +23,11 @@ public class ModBlocks {
     	
     	blockX = (BlockX) new BlockX().setUnlocalizedName("blockX").setCreativeTab(RandomMine.tab);   	
     	GameRegistry.registerBlock(blockX, "blockX");
+    	
+    	
+    	BlockFaceSilly = (BlockFaceSilly) new BlockFaceSilly().setUnlocalizedName("BlockFaceSilly").setCreativeTab(RandomMine.tab);   	
+    	GameRegistry.registerBlock(BlockFaceSilly, "BlockFaceSilly");
+    	
     	
     	
     
