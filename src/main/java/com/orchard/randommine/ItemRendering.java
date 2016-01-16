@@ -17,6 +17,7 @@ public class ItemRendering {
 	registerItemRendering("blockChoclate");
 	registerItemRendering("itemChocolate");
 	registerItemRendering("blockX");
+	registerItemRendering("blockSwordintheStone");
 
 	registerItemRendering("itemBedrockBreak");
 //github.com/ORCHARD-Minecraft-Mod-Class/mod-repo-test.git

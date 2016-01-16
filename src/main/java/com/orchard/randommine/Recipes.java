@@ -49,11 +49,11 @@ public class Recipes {
 			//Put your block or item recipes down here.
 			
 		  GameRegistry.addRecipe(new ItemStack(ModBlocks.blockSwordintheStone, 1), new Object[] {
-				 "PPP",
-				 "PAP",
-				 "PPP",
-				 'P', Items.iron_sword,
-				 'A', Blocks.stone
+				 "SSS",
+				 "SIS",
+				 "SSS",
+				 'I', Items.iron_sword,
+				 'S', Blocks.stone
 			   });	
 				
 			
