@@ -12,6 +12,8 @@ public class ModBlocks {
 	public static BlockX blockX;
 	public static BlockFaceSilly BlockFaceSilly;
 	
+	public static BlockSwordintheStone blockSwordintheStone;
+	
 	
     public static void preInitCommon() {
 
@@ -27,6 +29,9 @@ public class ModBlocks {
     	
     	BlockFaceSilly = (BlockFaceSilly) new BlockFaceSilly().setUnlocalizedName("BlockFaceSilly").setCreativeTab(RandomMine.tab);   	
     	GameRegistry.registerBlock(BlockFaceSilly, "BlockFaceSilly");
+    	
+    	blockSwordintheStone = (BlockSwordintheStone) new BlockSwordintheStone().setUnlocalizedName("blockSwordintheStone");   	
+    	GameRegistry.registerBlock(blockSwordintheStone, "blockSwordintheStone");
     	
     	
     	
