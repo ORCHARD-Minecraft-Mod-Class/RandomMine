@@ -30,7 +30,7 @@ public class ModBlocks {
     	BlockFaceSilly = (BlockFaceSilly) new BlockFaceSilly().setUnlocalizedName("BlockFaceSilly").setCreativeTab(RandomMine.tab);   	
     	GameRegistry.registerBlock(BlockFaceSilly, "BlockFaceSilly");
     	
-    	blockSwordintheStone = (BlockSwordintheStone) new BlockSwordintheStone().setUnlocalizedName("blockSwordintheStone");   	
+    	blockSwordintheStone = (BlockSwordintheStone) new BlockSwordintheStone().setUnlocalizedName("blockSwordintheStone").setCreativeTab(RandomMine.tab);   	
     	GameRegistry.registerBlock(blockSwordintheStone, "blockSwordintheStone");
     	
     	
