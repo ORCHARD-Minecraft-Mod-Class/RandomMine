@@ -1,2 +1,2 @@
 # RandomMine
-A Minecraft mod that adds Randoum things.
+A Minecraft mod that adds Random things.
