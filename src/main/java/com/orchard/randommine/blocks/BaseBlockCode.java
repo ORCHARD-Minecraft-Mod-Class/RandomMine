@@ -28,7 +28,7 @@ public class BaseBlockCode extends Block{
 		
 	
 	//This is where you define what color your block is on a map. Again, hold down ctrl and click "sandColor" to see a
-	//full list of options.
+	//full list of options..
 	}   public MapColor getMapColor(IBlockState state)
 	    {
 	        return MapColor.sandColor;
