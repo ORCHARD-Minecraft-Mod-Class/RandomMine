@@ -1,6 +1,12 @@
 {
-    "parent": "block/cube_all",
+    "parent": "block/cube",
     "textures": {
-        "all": "randommine:blocks/SwordintheStone"
+        "particle": "randommine:blocks/SwordintheStone",
+        "down": "randommine:blocks/SwordintheStone_b",
+        "up": "randommine:blocks/SwordintheStone_t",
+        "north": "randommine:blocks/SwordintheStone",
+        "east": "randommine:blocks/SwordintheStone",
+        "south": "randommine:blocks/SwordintheStone",
+        "west": "randommine:blocks/SwordintheStone"
     }
 }
