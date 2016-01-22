@@ -11,7 +11,7 @@ public class ModBlocks {
 	public static BlockChoclate blockChoclate;
 	public static BlockX blockX;
 	public static BlockFaceSilly BlockFaceSilly;
-	
+	public static BlockMustyApple BlockMustyApple;
 	public static BlockSwordintheStone blockSwordintheStone;
 	
 	
@@ -33,7 +33,8 @@ public class ModBlocks {
     	blockSwordintheStone = (BlockSwordintheStone) new BlockSwordintheStone().setUnlocalizedName("blockSwordintheStone").setCreativeTab(RandomMine.tab);   	
     	GameRegistry.registerBlock(blockSwordintheStone, "blockSwordintheStone");
     	
-    	
+    	BlockMustyApple = (BlockMustyApple) new BlockMustyApple().setUnlocalizedName("BlockMustyApple").setCreativeTab(RandomMine.tab);   	
+    	GameRegistry.registerBlock(BlockMustyApple, "BlockMustyApple");
     	
     
     }

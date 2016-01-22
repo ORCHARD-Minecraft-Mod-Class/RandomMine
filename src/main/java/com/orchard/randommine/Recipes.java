@@ -55,6 +55,13 @@ public class Recipes {
 				 'I', Items.iron_sword,
 				 'S', Blocks.stone
 			   });	
+			  GameRegistry.addRecipe(new ItemStack(ModBlocks.BlockMustyApple, 1), new Object[] {
+				 "AAA",
+				 "ASA",
+				 "AAA",
+				 'S', Items.slime_ball,
+				 'A', Items.apple
+			   });
 				
 			
 			
