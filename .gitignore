@@ -10,3 +10,4 @@ $ cat .gitignore
 !setup.bat
 !setup.command
 !JAVA_HOME Error Fix.bat
+!ModelCreator_pre4.jar
