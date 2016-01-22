@@ -10,7 +10,7 @@ public class ModBlocks {
 //public static Block(name) block(name);
 	public static BlockChoclate blockChoclate;
 	public static BlockX blockX;
-	
+	public static Blockmrcatface blockmrcatface;
 	
 	
     public static void preInitCommon() {
