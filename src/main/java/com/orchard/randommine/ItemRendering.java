@@ -20,6 +20,8 @@ public class ItemRendering {
 	registerItemRendering("blockSwordintheStone");
 	registerItemRendering("BlockControlPanel");
 	registerItemRendering("itemBedrockBreak");
+	registerItemRendering("itemHamburger");
+	registerItemRendering("itemBaconBurger");
 //github.com/ORCHARD-Minecraft-Mod-Class/mod-repo-test.git
 	}
 }

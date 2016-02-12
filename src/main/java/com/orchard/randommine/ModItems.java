@@ -20,10 +20,10 @@ public class ModItems {
 		 GameRegistry.registerItem(itemChocolate, "itemChocolate");
 		 BedrockBreak= (ItemBedrockBreak) new ItemBedrockBreak().setUnlocalizedName("itemBedrockBreak").setCreativeTab(RandomMine.tab);
 		 GameRegistry.registerItem(BedrockBreak, "itemBedrockBreak");
-		 itemHamburger= (BaseFood) new BaseFood("Hamburger", 	1, 1F, false,64, new PotionEffect(Potion.moveSpeed.id, 150, 0)).setCreativeTab(RandomMine.tab);
+		 itemHamburger= (BaseFood) new BaseFood("Hamburger", 	10, 10F, true,64, new PotionEffect(Potion.invisibility.id, 150, 0)).setCreativeTab(RandomMine.tab);
 		 GameRegistry.registerItem(itemHamburger, "Hamburger");
 		 
-		 itemBaconBurger= (BaseFood) new BaseFood("The Bacon Burger!", 	1, 1F, false,64, new PotionEffect(Potion.moveSpeed.id, 150, 0)).setCreativeTab(RandomMine.tab);
+		 itemBaconBurger= (BaseFood) new BaseFood("The Bacon Burger!", 	20, 20F, true,64, new PotionEffect(Potion.regeneration.id, 150, 0)).setCreativeTab(RandomMine.tab);
 		 GameRegistry.registerItem(itemBaconBurger, "The Bacon Burger!");
 	}
 
