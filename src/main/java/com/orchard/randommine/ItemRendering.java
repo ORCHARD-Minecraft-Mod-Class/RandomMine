@@ -15,11 +15,13 @@ public class ItemRendering {
 	//This is where you render items that are entities on the ground.	
 	//example: "registerItemRendering("MyBlockName");
 	registerItemRendering("blockChoclate");
+	registerItemRendering("itemChoclatePie");
 	registerItemRendering("itemChocolate");
 	registerItemRendering("blockX");
 	registerItemRendering("blockSwordintheStone");
 	registerItemRendering("BlockControlPanel");
 	registerItemRendering("itemBedrockBreak");
+	registerItemRendering("BlockBraker");
 //github.com/ORCHARD-Minecraft-Mod-Class/mod-repo-test.git
 	}
 }

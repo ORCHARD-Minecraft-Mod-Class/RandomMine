@@ -14,6 +14,7 @@ public class ModBlocks {
 	public static BlockMustyApple BlockMustyApple;
 	public static BlockSwordintheStone blockSwordintheStone;
 	public static BlockControlPanel BlockControlPanel;
+	public static BlockBraker BlockBraker;
 	
     public static void preInitCommon() {
 
@@ -39,6 +40,9 @@ public class ModBlocks {
 
     	BlockMustyApple = (BlockMustyApple) new BlockMustyApple().setUnlocalizedName("BlockMustyApple").setCreativeTab(RandomMine.tab);   	
     	GameRegistry.registerBlock(BlockMustyApple, "BlockMustyApple");
+    	
+    	BlockBraker = (BlockBraker) new BlockBraker().setUnlocalizedName("Braker");   	
+    	GameRegistry.registerBlock(BlockBraker, "BlockBraker");
     	
 //github.com/ORCHARD-Minecraft-Mod-Class/RandomMine.git
     

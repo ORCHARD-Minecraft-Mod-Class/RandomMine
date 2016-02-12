@@ -11,12 +11,15 @@ public class ModItems {
 	//public static(Item Name) item(Item Name);
 	public static Item itemChocolate;
 	public static ItemBedrockBreak BedrockBreak;
+	public static Item itemChoclatePie;
 	public static void preInitCommon() {
 	 //item(Item Name)= (Item Name) new Item(Item Name)().setUnlocalizedName("item(Item Name)");
 	 //GameRegistry.registerItem(item(Item Name), "item(Item Name)");
-		 itemChocolate= (BaseFood) new BaseFood("Chocolate", 1, 1F, false,64, new PotionEffect(Potion.moveSpeed.id, 150, 0)).setCreativeTab(RandomMine.tab);
+		 itemChocolate= (BaseFood) new BaseFood("Chocolate", 1, 1F, false,64).setCreativeTab(RandomMine.tab);
 		 GameRegistry.registerItem(itemChocolate, "itemChocolate");
 		 BedrockBreak= (ItemBedrockBreak) new ItemBedrockBreak().setUnlocalizedName("itemBedrockBreak").setCreativeTab(RandomMine.tab);
 		 GameRegistry.registerItem(BedrockBreak, "itemBedrockBreak");
+		 itemChoclatePie= (BaseFood) new BaseFood("ChocolatePie", 5, 2F, true,64).setCreativeTab(RandomMine.tab);
+		 GameRegistry.registerItem(itemChoclatePie, "itemChoclatePie");
 	}
 }
