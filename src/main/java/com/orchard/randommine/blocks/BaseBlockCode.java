@@ -7,8 +7,8 @@ import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
-
-
+//BACON!!!!!!!!!!!
+//MORE BACON!!!!!!!!
 //Wherever it says "BaseBlockCode" replace it with the name of your block, for example "MyBlock"
 public class BaseBlockCode extends Block{
 	public BaseBlockCode() {
