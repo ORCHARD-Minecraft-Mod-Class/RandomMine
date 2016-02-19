@@ -20,9 +20,17 @@ public class ModItems {
 	public static Item itemPickle;
 	public static ToolMaterial pic;
 	public static void preInitCommon() {
-		}
+
 	
-	public static ToolMaterial TUTORIAL = EnumHelper.addToolMaterial("MyMaterial", 3, 2020, 15.0F, 4.0F, 30);
+			//This is where you add your tool material types.
+			
+			// This is the format: Replace "MyMaterial" With the name of your Material.
+			//Replace 1 with the level of hardness. (3 is diamond)
+				//Replace 2 with the durability level (1561 is diamond)
+				//Replace 3.0F with the mining speed (8.0F is diamond)
+				//Replace 4.0F with the damage value (3.0F is diamond tool)
+				//Replace the 5 with the enchantibility level of the tool (diamond is 10)
+				ToolMaterial MyMaterial = EnumHelper.addToolMaterial("MyMaterial", 1, 2, 3.0F, 4.0F, 5);
 	
 	
 	
@@ -51,7 +59,7 @@ public class ModItems {
 		 itemBaconBurger= (BaseFood) new BaseFood("The Bacon Burger!", 	20, 20F, true,64, new PotionEffect(Potion.regeneration.id, 150, 0)).setCreativeTab(RandomMine.tab);
 		 GameRegistry.registerItem(itemBaconBurger, "The Bacon Burger!");
 		 
-		 GameRegistry.registerItem( new ItemModPickaxe("ItemModPickaxe", pic), "ItemModPickaxe");
+		 GameRegistry.registerItem( new ItemModPickaxe("ItemModPickaxe", MyMaterial), "ItemModPickaxe");
 		 
 		 
 	 itemHotDog= (BaseFood) new BaseFood("Hot Dog", 20, 20F, false,64, new PotionEffect(Potion.moveSpeed.id, 150, 0)).setCreativeTab(RandomMine.tab);
