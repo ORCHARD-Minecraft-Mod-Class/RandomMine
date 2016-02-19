@@ -15,6 +15,8 @@ public class ItemRendering {
 	//This is where you render items that are entities on the ground.	
 	//example: "registerItemRendering("MyBlockName");
 	registerItemRendering("blockChoclate");
+	registerItemRendering("blockHotDog");
+	registerItemRendering("itemPickle");
 	registerItemRendering("itemChocolate");
 	registerItemRendering("blockX");
 	registerItemRendering("blockSwordintheStone");
