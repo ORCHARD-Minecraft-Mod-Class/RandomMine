@@ -66,7 +66,13 @@ public class Recipes {
 			
 			
 			
-			
+		  GameRegistry.addRecipe(new ItemStack(ModBlocks.BlockControlPanel, 1), new Object[] {
+				 "PPP",
+				 "PAP",
+				 "PPP",
+				 'P', Blocks.iron_block,
+				 'A', Blocks.redstone_block
+			   });	
 			
 			
 			

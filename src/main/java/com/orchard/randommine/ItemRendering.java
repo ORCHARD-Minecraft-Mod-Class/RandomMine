@@ -21,6 +21,8 @@ public class ItemRendering {
 	registerItemRendering("itemDimondfood");
 	
 	registerItemRendering("itemBedrockBreak");
+	registerItemRendering("itemHamburger");
+	registerItemRendering("itemBaconBurger");
 //github.com/ORCHARD-Minecraft-Mod-Class/mod-repo-test.git
 	}
 }

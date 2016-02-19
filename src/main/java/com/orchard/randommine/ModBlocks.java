@@ -7,13 +7,13 @@ import com.orchard.randommine.blocks.*;
 //This is where blocks that are placed are registered into the game.
 
 public class ModBlocks {
-//public static Block(name) block(name);
+	//public static Block(name) block(name);
 	public static BlockChoclate blockChoclate;
 	public static BlockX blockX;
 	public static BlockFaceSilly BlockFaceSilly;
 	public static BlockMustyApple BlockMustyApple;
 	public static BlockSwordintheStone blockSwordintheStone;
-	
+	public static BlockControlPanel BlockControlPanel;
 	
     public static void preInitCommon() {
 
@@ -30,12 +30,17 @@ public class ModBlocks {
     	BlockFaceSilly = (BlockFaceSilly) new BlockFaceSilly().setUnlocalizedName("BlockFaceSilly").setCreativeTab(RandomMine.tab);   	
     	GameRegistry.registerBlock(BlockFaceSilly, "BlockFaceSilly");
     	
-    	blockSwordintheStone = (BlockSwordintheStone) new BlockSwordintheStone().setUnlocalizedName("blockSwordintheStone").setCreativeTab(RandomMine.tab);   	
-    	GameRegistry.registerBlock(blockSwordintheStone, "blockSwordintheStone");
+    	blockSwordintheStone = (BlockSwordintheStone) new BlockSwordintheStone().setUnlocalizedName("Sword in the Stone").setCreativeTab(RandomMine.tab);   	
+    	GameRegistry.registerBlock(blockSwordintheStone, "Sword in the Stone");
     	
+    	
+    	BlockControlPanel = (BlockControlPanel) new BlockControlPanel().setUnlocalizedName("Control Panel");   	
+    	GameRegistry.registerBlock(BlockControlPanel, "Control Panel");
+
     	BlockMustyApple = (BlockMustyApple) new BlockMustyApple().setUnlocalizedName("BlockMustyApple").setCreativeTab(RandomMine.tab);   	
     	GameRegistry.registerBlock(BlockMustyApple, "BlockMustyApple");
     	
+//github.com/ORCHARD-Minecraft-Mod-Class/RandomMine.git
     
     }
 }
