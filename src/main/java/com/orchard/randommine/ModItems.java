@@ -17,7 +17,7 @@ public class ModItems {
 	public static void preInitCommon() {
 		}
 	
-	public static ToolMaterial TUTORIAL = EnumHelper.addToolMaterial("MyMaterial", 3, 2000, 15.0F, 4.0F, 30);
+	public static ToolMaterial TUTORIAL = EnumHelper.addToolMaterial("MyMaterial", 3, 2020, 15.0F, 4.0F, 30);
 	
 	
 	
