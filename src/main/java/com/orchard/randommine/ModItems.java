@@ -16,8 +16,21 @@ public class ModItems {
 	public static Item itemHotDog;
 	public static Item itemPickle;
 	public static void preInitCommon() {
+		}
+	
+	public static ToolMaterial TUTORIAL = EnumHelper.addToolMaterial("MyMaterial", 3, 1000, 15.0F, 4.0F, 30);
+	
+	
+	
+	
+	
+	
+	
+	
 	 //item(Item Name)= (Item Name) new Item(Item Name)().setUnlocalizedName("item(Item Name)");
 	 //GameRegistry.registerItem(item(Item Name), "item(Item Name)");
+		
+		
 		
 		
 	 itemChocolate= (BaseFood) new BaseFood("Chocolate", 	1, 1F, false,64, new PotionEffect(Potion.moveSpeed.id, 150, 0)).setCreativeTab(RandomMine.tab);
