@@ -8,11 +8,12 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 @Mod(modid = RandomMine.MODID, version = RandomMine.VERSION, name = "RandomMine")
 public class RandomMine 
 {
-	static CreativeTabs tab = new CreativeTab("Random Mine");
+	public static CreativeTabs tab = new CreativeTab("Random Mine");
 
 	public static final String MODID = "randommine";
 	public static final String VERSION = "1.0";
@@ -42,9 +43,7 @@ public class RandomMine
 	public void postInit(FMLPostInitializationEvent event)
 	{
 		
-	}
-	
-	
+	}	
 }
 
 

@@ -13,8 +13,7 @@ public class ModItems {
 	//public static(Item Name) item(Item Name);
 	public static Item itemChocolate;
 	public static ItemBedrockBreak BedrockBreak;
-	public static Item itemHotDog;
-	public static Item itemPickle;
+	public static Item itemChoclatePie;
 	public static void preInitCommon() {
 		}
 	
@@ -38,6 +37,8 @@ public class ModItems {
 		 
 		 BedrockBreak= (ItemBedrockBreak) new ItemBedrockBreak().setUnlocalizedName("itemBedrockBreak").setCreativeTab(RandomMine.tab);
 		 GameRegistry.registerItem(BedrockBreak, "itemBedrockBreak");
+		 itemChoclatePie= (BaseFood) new BaseFood("ChocolatePie", 5, 2F, true,64).setCreativeTab(RandomMine.tab);
+		 GameRegistry.registerItem(itemChoclatePie, "itemChoclatePie");
 		 
 		 itemHamburger= (BaseFood) new BaseFood("Hamburger", 	10, 10F, true,64, new PotionEffect(Potion.invisibility.id, 150, 0)).setCreativeTab(RandomMine.tab);
 		 GameRegistry.registerItem(itemHamburger, "Hamburger");
