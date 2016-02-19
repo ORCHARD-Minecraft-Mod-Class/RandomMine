@@ -20,9 +20,13 @@ public class ItemRendering {
 	registerItemRendering("blockX");
 	registerItemRendering("blockSwordintheStone");
 	registerItemRendering("itemDimondfood");
-	
+	registerItemRendering("BlockControlPanel");
 	registerItemRendering("itemBedrockBreak");
 	registerItemRendering("BlockBraker");
+	registerItemRendering("blockHotDog");
+	registerItemRendering("itemPickle");
+	registerItemRendering("itemHamburger");
+	registerItemRendering("itemBaconBurger");
 //github.com/ORCHARD-Minecraft-Mod-Class/mod-repo-test.git
 	}
 }
