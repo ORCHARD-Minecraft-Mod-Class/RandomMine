@@ -10,10 +10,8 @@ public class ModBlocks {
 	//public static Block(name) block(name);
 	public static BlockChoclate blockChoclate;
 	public static BlockX blockX;
-	public static BlockFaceSilly BlockFaceSilly;
-	public static BlockMustyApple BlockMustyApple;
-	public static BlockSwordintheStone blockSwordintheStone;
-	public static BlockControlPanel BlockControlPanel;
+	public static Blockmrcatface blockmrcatface;
+	
 	public static BlockBraker BlockBraker;
 	
     public static void preInitCommon() {
