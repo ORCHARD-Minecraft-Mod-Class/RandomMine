@@ -20,9 +20,24 @@ public class ModItems {
 	public static Item itemPickle;
 	public static ToolMaterial pic;
 	public static void preInitCommon() {
+		}
+	
+	public static ToolMaterial TUTORIAL = EnumHelper.addToolMaterial("MyMaterial", 3, 2020, 15.0F, 4.0F, 30);
+	
+	
+	
+	
+	
+	
+	
+	
 	 //item(Item Name)= (Item Name) new Item(Item Name)().setUnlocalizedName("item(Item Name)");
 	 //GameRegistry.registerItem(item(Item Name), "item(Item Name)");
-		 itemChocolate= (BaseFood) new BaseFood("Chocolate", 1, 1F, false,64).setCreativeTab(RandomMine.tab);
+		
+		
+		
+		
+	 itemChocolate= (BaseFood) new BaseFood("Chocolate", 	1, 1F, false,64, new PotionEffect(Potion.moveSpeed.id, 150, 0)).setCreativeTab(RandomMine.tab);
 		 GameRegistry.registerItem(itemChocolate, "itemChocolate");
 		 
 		 BedrockBreak= (ItemBedrockBreak) new ItemBedrockBreak().setUnlocalizedName("itemBedrockBreak").setCreativeTab(RandomMine.tab);
