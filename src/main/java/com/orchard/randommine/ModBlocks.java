@@ -11,8 +11,11 @@ public class ModBlocks {
 	public static BlockChoclate blockChoclate;
 	public static BlockX blockX;
 	public static Blockmrcatface blockmrcatface;
-	
+	public static BlockFaceSilly BlockFaceSilly;	
 	public static BlockBraker BlockBraker;
+	public static BlockSwordintheStone blockSwordintheStone;
+	public static BlockControlPanel BlockControlPanel;
+	public static BlockMustyApple BlockMustyApple;
 	
     public static void preInitCommon() {
 
