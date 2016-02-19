@@ -48,11 +48,31 @@ public class Recipes {
 		
 			//Put your block or item recipes down here.
 			
+		  GameRegistry.addRecipe(new ItemStack(ModBlocks.blockSwordintheStone, 1), new Object[] {
+				 "SSS",
+				 "SIS",
+				 "SSS",
+				 'I', Items.iron_sword,
+				 'S', Blocks.stone
+			   });	
+			  GameRegistry.addRecipe(new ItemStack(ModBlocks.BlockMustyApple, 1), new Object[] {
+				 "AAA",
+				 "ASA",
+				 "AAA",
+				 'S', Items.slime_ball,
+				 'A', Items.apple
+			   });
+				
 			
 			
 			
-			
-			
+		  GameRegistry.addRecipe(new ItemStack(ModBlocks.BlockControlPanel, 1), new Object[] {
+				 "PPP",
+				 "PAP",
+				 "PPP",
+				 'P', Blocks.iron_block,
+				 'A', Blocks.redstone_block
+			   });	
 			
 			
 			
