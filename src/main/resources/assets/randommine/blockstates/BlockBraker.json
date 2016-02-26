@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=down":  { "model": "randommine:BlockBraker_vertical", "x": 180 },
+        "facing=up":    { "model": "randommine:BlockBraker_vertical" },
+        "facing=north": { "model": "randommine:BlockBraker" },
+        "facing=south": { "model": "randommine:BlockBraker", "y": 180 },
+        "facing=west":  { "model": "randommine:BlockBraker", "y": 270 },
+        "facing=east":  { "model": "randommine:BlockBraker", "y": 90 }
+    }
+}
