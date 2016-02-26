@@ -22,7 +22,7 @@ public class ItemRendering {
 	registerItemRendering("itemDimondfood");
 	registerItemRendering("BlockControlPanel");
 	registerItemRendering("itemBedrockBreak");
-	registerItemRendering("BlockBraker");
+	//registerItemRendering("BlockBraker");
 	registerItemRendering("blockHotDog");
 	registerItemRendering("itemPickle");
 	registerItemRendering("itemHamburger");
