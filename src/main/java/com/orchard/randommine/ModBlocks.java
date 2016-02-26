@@ -36,13 +36,13 @@ public class ModBlocks {
     	GameRegistry.registerBlock(blockSwordintheStone, "Sword in the Stone");
     	
     	
-    	BlockControlPanel = (BlockControlPanel) new BlockControlPanel().setUnlocalizedName("Control Panel");   	
+    	BlockControlPanel = (BlockControlPanel) new BlockControlPanel().setUnlocalizedName("Control Panel").setCreativeTab(RandomMine.tab);   	
     	GameRegistry.registerBlock(BlockControlPanel, "Control Panel");
 
     	BlockMustyApple = (BlockMustyApple) new BlockMustyApple().setUnlocalizedName("BlockMustyApple").setCreativeTab(RandomMine.tab);   	
     	GameRegistry.registerBlock(BlockMustyApple, "BlockMustyApple");
     	
-    	BlockBraker = (BlockBraker) new BlockBraker().setUnlocalizedName("Braker");   	
+    	BlockBraker = (BlockBraker) new BlockBraker().setUnlocalizedName("Braker").setCreativeTab(RandomMine.tab);   	
     	GameRegistry.registerBlock(BlockBraker, "BlockBraker");
     	
 //github.com/ORCHARD-Minecraft-Mod-Class/RandomMine.git
