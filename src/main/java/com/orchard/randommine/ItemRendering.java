@@ -31,6 +31,14 @@ public class ItemRendering {
 	registerItemRendering("PurpleArmor_boots");
 	registerItemRendering("PurpleArmor_body");
 	registerItemRendering(":PurpleArmor_head");
+	registerItemRendering("Minion_Armor_leggins");
+	registerItemRendering("Minion_Armor_boots");
+	registerItemRendering("Minion_Armor_body");
+	registerItemRendering(":Minion_Armor_head");
+	registerItemRendering("Techno_Armor_leggins");
+	registerItemRendering("Techno_Armor_boots");
+	registerItemRendering("Techno_Armor_body");
+	registerItemRendering(":Techno_Armor_head");
 //github.com/ORCHARD-Minecraft-Mod-Class/mod-repo-test.git
 	}
 }
