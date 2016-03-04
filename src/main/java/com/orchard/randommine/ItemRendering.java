@@ -27,7 +27,8 @@ public class ItemRendering {
 	registerItemRendering("itemPickle");
 	registerItemRendering("itemHamburger");
 	registerItemRendering("itemBaconBurger");
-	registerItemRendering("PurpleArmor");
+	registerItemRendering("PurpleArmor_boot");
+		registerItemRendering("PurpleArmor_boot");
 //github.com/ORCHARD-Minecraft-Mod-Class/mod-repo-test.git
 	}
 }
