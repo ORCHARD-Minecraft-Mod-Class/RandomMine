@@ -24,7 +24,6 @@ public class ModItems {
 	
 	
 	public static void preInitCommon() {
-			PurpleArmor.load()
 	
 			//This is where you add your tool material types.
 			
