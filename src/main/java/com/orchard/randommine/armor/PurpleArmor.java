@@ -101,12 +101,6 @@ public static Item body;
 public static Item legs;
 public static Item boots;
 public Object instance;
-public void load(FMLInitializationEvent event){
-helmet.setCreativeTab(CreativeTabs.tabCombat);
-body.setCreativeTab(CreativeTabs.tabCombat);
-legs.setCreativeTab(CreativeTabs.tabCombat);
-boots.setCreativeTab(CreativeTabs.tabCombat);
-}
 public void generateNether(World world, Random random, int chunkX, int chunkZ){}
 public void generateSurface(World world, Random random, int chunkX, int chunkZ){}
 public int addFuel(ItemStack fuel){return 0;}
@@ -144,7 +138,10 @@ int k = (int)entity.posZ;
 }
 }).setUnlocalizedName("PurpleArmor_boots");boots.setMaxStackSize(1);
 
-
+helmet.setCreativeTab(CreativeTabs.tabCombat);
+body.setCreativeTab(CreativeTabs.tabCombat);
+legs.setCreativeTab(CreativeTabs.tabCombat);
+boots.setCreativeTab(CreativeTabs.tabCombat);
 
 }
 
