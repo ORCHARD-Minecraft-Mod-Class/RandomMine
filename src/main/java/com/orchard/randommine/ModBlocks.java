@@ -43,8 +43,8 @@ public class ModBlocks {
     	BlockMustyApple = (BlockMustyApple) new BlockMustyApple().setUnlocalizedName("BlockMustyApple").setCreativeTab(RandomMine.tab);   	
     	GameRegistry.registerBlock(BlockMustyApple, "BlockMustyApple");
     	
-    	BlockBraker = (BlockBraker) new BlockBraker().setUnlocalizedName("Braker").setCreativeTab(RandomMine.tab);   	
-    	GameRegistry.registerBlock(BlockBraker, "BlockBraker");
+    	//BlockBraker = (BlockBraker) new BlockBraker().setUnlocalizedName("Braker").setCreativeTab(RandomMine.tab);   	
+    	//GameRegistry.registerBlock(BlockBraker, "BlockBraker");
     	
     	
     	
