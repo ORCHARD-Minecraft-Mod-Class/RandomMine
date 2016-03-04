@@ -30,7 +30,11 @@ public class ItemRendering {
 	registerItemRendering("PurpleArmor_leggins");
 	registerItemRendering("PurpleArmor_boots");
 	registerItemRendering("PurpleArmor_body");
-	registerItemRendering(":PurpleArmor_head");
+	registerItemRendering("PurpleArmor_head");
+	registerItemRendering("EmeraldArmor_leggins");
+	registerItemRendering("EmeraldArmor_boots");
+	registerItemRendering("EmeraldArmor_body");
+	registerItemRendering("EmeraldArmor_head");
 //github.com/ORCHARD-Minecraft-Mod-Class/mod-repo-test.git
 	}
 }
