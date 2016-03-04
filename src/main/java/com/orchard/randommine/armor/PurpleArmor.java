@@ -89,6 +89,8 @@ import net.minecraftforge.oredict.*;
 import net.minecraft.init.*;
 import java.util.Random;
 
+import com.orchard.randommine.RandomMine;
+
 import net.minecraftforge.common.util.*;import net.minecraft.client.resources.model.*;
 public class PurpleArmor{
 
@@ -103,7 +105,7 @@ if(event.getSide() == Side.CLIENT){
 Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(helmet, 0, new ModelResourceLocation("TestEnvironmentMod:PurpleArmor_head", "inventory"));
 Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(body, 0, new ModelResourceLocation("TestEnvironmentMod:PurpleArmor_body", "inventory"));
 Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(legs, 0, new ModelResourceLocation("TestEnvironmentMod:PurpleArmor_leggins", "inventory"));
-Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(boots, 0, new ModelResourceLocation("TestEnvironmentMod:PurpleArmor_boots", "inventory"));
+Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(boots, 0, new ModelResourceLocation("randommine.textures.items:PurpleArmor_boots", "inventory"));
 }
 helmet.setCreativeTab(CreativeTabs.tabCombat);
 body.setCreativeTab(CreativeTabs.tabCombat);

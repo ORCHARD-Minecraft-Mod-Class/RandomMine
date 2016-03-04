@@ -20,6 +20,7 @@ public class ModItems {
 	public static Item itemHotDog;
 	public static Item itemPickle;
 	public static ToolMaterial pic;
+	public static Item PurpleArmor_head;
 	public static Item PurpleArmor;
 	
 	
@@ -65,7 +66,8 @@ public class ModItems {
 		 
 		 GameRegistry.registerItem( new ItemModPickaxe("ItemModPickaxe", MyMaterial), "ItemModPickaxe");
 		 
-		 
+		 PurpleArmor_head= (PurpleArmor_head) new PurpleArmor_head().setUnlocalizedName("PurpleArmor_head").setCreativeTab(RandomMine.tab);
+		 GameRegistry.registerItem(PurpleArmor_head, "PurpleArmor_head");
 		 
 		 
 	 itemHotDog= (BaseFood) new BaseFood("Hot Dog", 20, 20F, false,64, new PotionEffect(Potion.moveSpeed.id, 150, 0)).setCreativeTab(RandomMine.tab);
