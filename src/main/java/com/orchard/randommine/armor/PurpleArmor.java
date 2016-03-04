@@ -100,13 +100,8 @@ public static Item helmet;
 public static Item body;
 public static Item legs;
 public static Item boots;
-public Object instance;public void load(FMLInitializationEvent event){
-if(event.getSide() == Side.CLIENT){
-Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(helmet, 0, new ModelResourceLocation("TestEnvironmentMod:PurpleArmor_head", "inventory"));
-Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(body, 0, new ModelResourceLocation("TestEnvironmentMod:PurpleArmor_body", "inventory"));
-Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(legs, 0, new ModelResourceLocation("TestEnvironmentMod:PurpleArmor_leggins", "inventory"));
-Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(boots, 0, new ModelResourceLocation("randommine.textures.items:PurpleArmor_boots", "inventory"));
-}
+public Object instance;
+public void load(FMLInitializationEvent event){
 helmet.setCreativeTab(CreativeTabs.tabCombat);
 body.setCreativeTab(CreativeTabs.tabCombat);
 legs.setCreativeTab(CreativeTabs.tabCombat);
@@ -149,10 +144,7 @@ int k = (int)entity.posZ;
 }
 }).setUnlocalizedName("PurpleArmor_boots");boots.setMaxStackSize(1);
 
-GameRegistry.registerItem(helmet, "PurpleArmor_head");
-GameRegistry.registerItem(body, "PurpleArmor_body");
-GameRegistry.registerItem(legs, "PurpleArmor_leggins");
-GameRegistry.registerItem(boots, "PurpleArmor_boots");
+
 
 }
 
