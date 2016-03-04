@@ -68,6 +68,11 @@ public class ModItems {
 		GameRegistry.registerItem(PurpleArmor.body, "PurpleArmor_body");
 		GameRegistry.registerItem(PurpleArmor.legs, "PurpleArmor_leggins");
 		GameRegistry.registerItem(PurpleArmor.boots, "PurpleArmor_boots");
+		
+		GameRegistry.registerItem(DirtArmor.helmet, "DirtArmor_head");
+		GameRegistry.registerItem(DirtArmor.body, "DirtArmor_body");
+		GameRegistry.registerItem(DirtArmor.legs, "DirtArmor_leggins");
+		GameRegistry.registerItem(DirtArmor.boots, "DirtArmor_boots");
 		 
 	 itemHotDog= (BaseFood) new BaseFood("Hot Dog", 20, 20F, false,64, new PotionEffect(Potion.moveSpeed.id, 150, 0)).setCreativeTab(RandomMine.tab);
 	 GameRegistry.registerItem(itemHotDog, "itemHotDog");
