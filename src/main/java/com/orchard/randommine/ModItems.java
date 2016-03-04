@@ -6,6 +6,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import com.orchard.randommine.items.*;
+import com.orchard.randommine.armor.*;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 
@@ -19,6 +20,9 @@ public class ModItems {
 	public static Item itemHotDog;
 	public static Item itemPickle;
 	public static ToolMaterial pic;
+	public static Item PurpleArmor;
+	
+	
 	public static void preInitCommon() {
 
 	
@@ -60,6 +64,8 @@ public class ModItems {
 		 GameRegistry.registerItem(itemBaconBurger, "The Bacon Burger!");
 		 
 		 GameRegistry.registerItem( new ItemModPickaxe("ItemModPickaxe", MyMaterial), "ItemModPickaxe");
+		 
+		 
 		 
 		 
 	 itemHotDog= (BaseFood) new BaseFood("Hot Dog", 20, 20F, false,64, new PotionEffect(Potion.moveSpeed.id, 150, 0)).setCreativeTab(RandomMine.tab);
