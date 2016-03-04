@@ -4,3 +4,7 @@ tile.blockX.name=X Block
 itemGroup.Random Mine=Random Mine
 item.itemBedrockBreak.name=Bedrock Breaker
 tile.blockSwordintheStone.name=Sword in the Stone
+item.PurpleArmor_head.name=Purple Armor Hat
+item.PurpleArmor_body.name=Purple Armor Platechest
+item.PurpleArmor_leggins.name=Purple Armor Pants
+item.PurpleArmor_boots.name=Purple Armored Cats
