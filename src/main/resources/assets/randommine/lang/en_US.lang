@@ -4,3 +4,7 @@ tile.blockX.name=X Block
 itemGroup.Random Mine=Random Mine
 item.itemBedrockBreak.name=Bedrock Breaker
 tile.blockSwordintheStone.name=Sword in the Stone
+item.EmeraldArmor_head.name=Emerald Helmet
+item.EmeraldArmor_body.name=Emerald Chestplate
+item.EmeraldArmor_leggins.name=Emerald Pants
+item.EmeraldArmor_boots.name=Emerald Shoes
