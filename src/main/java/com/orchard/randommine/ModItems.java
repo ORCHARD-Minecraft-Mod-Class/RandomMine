@@ -19,6 +19,10 @@ public class ModItems {
 	public static Item itemBaconBurger;
 	public static Item itemHotDog;
 	public static Item itemPickle;
+	public static Item EmeraldArmor_head;
+	public static Item EmeraldArmor_body;
+	public static Item EmeraldArmor_leggins;
+	public static Item EmeraldArmor_boots;
 	public static ToolMaterial pic;
 
 	
