@@ -31,6 +31,17 @@ public class ItemRendering {
 	registerItemRendering("PurpleArmor_boots");
 	registerItemRendering("PurpleArmor_body");
 <<<<<<< HEAD
+	registerItemRendering("spelunkycape_head");
+	registerItemRendering("spelunkycape_leggins");
+	registerItemRendering("spelunkycape_boots");
+	registerItemRendering("spelunkycape_body");
+	registerItemRendering("spelunkycape_head");
+	
+	
+	}}
+//github.com/ORCHARD-Minecraft-Mod-Class/mod-repo-test.git
+=======
+<<<<<<< HEAD
 	registerItemRendering("PurpleArmor_head");
 	registerItemRendering("DirtArmor_leggins");
 	registerItemRendering("DirtArmor_boots");
@@ -65,3 +76,4 @@ public class ItemRendering {
 //github.com/ORCHARD-Minecraft-Mod-Class/mod-repo-test.git
 	}
 }
+>>>>>>> master
