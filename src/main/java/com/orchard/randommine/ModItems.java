@@ -68,6 +68,15 @@ public class ModItems {
 		GameRegistry.registerItem(PurpleArmor.body, "PurpleArmor_body");
 		GameRegistry.registerItem(PurpleArmor.legs, "PurpleArmor_leggins");
 		GameRegistry.registerItem(PurpleArmor.boots, "PurpleArmor_boots");
+		
+		GameRegistry.registerItem(Minion_Armor.helmet, "Minion_Armor_head");
+		GameRegistry.registerItem(Minion_Armor.body, "Minion_Armor_body");
+		GameRegistry.registerItem(Minion_Armor.legs, "Minion_Armor_leggins");
+		GameRegistry.registerItem(Minion_Armor.boots, "Minion_Armor_boots");
+		GameRegistry.registerItem(Techno_Armor.helmet, "Techno_Armor_head");
+		GameRegistry.registerItem(Techno_Armor.body, "Techno_Armor_body");
+		GameRegistry.registerItem(Techno_Armor.legs, "Techno_Armor_leggins");
+		GameRegistry.registerItem(Techno_Armor.boots, "Techno_Armor_boots");
 		 
 	 itemHotDog= (BaseFood) new BaseFood("Hot Dog", 20, 20F, false,64, new PotionEffect(Potion.moveSpeed.id, 150, 0)).setCreativeTab(RandomMine.tab);
 	 GameRegistry.registerItem(itemHotDog, "itemHotDog");
