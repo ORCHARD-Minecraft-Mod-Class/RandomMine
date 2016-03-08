@@ -19,6 +19,10 @@ public class ModItems {
 	public static Item itemBaconBurger;
 	public static Item itemHotDog;
 	public static Item itemPickle;
+	public static Item EmeraldArmor_head;
+	public static Item EmeraldArmor_body;
+	public static Item EmeraldArmor_leggins;
+	public static Item EmeraldArmor_boots;
 	public static ToolMaterial pic;
 
 	
@@ -78,6 +82,10 @@ public class ModItems {
 		GameRegistry.registerItem(Techno_Armor.legs, "Techno_Armor_leggins");
 		GameRegistry.registerItem(Techno_Armor.boots, "Techno_Armor_boots");
 		 
+		GameRegistry.registerItem(EmeraldArmor.helmet, "EmeraldArmor_head");
+		GameRegistry.registerItem(EmeraldArmor.body, "EmeraldArmor_body");
+		GameRegistry.registerItem(EmeraldArmor.legs, "EmeraldArmor_leggins");
+		GameRegistry.registerItem(EmeraldArmor.boots, "EmeraldArmor_boots");
 	 itemHotDog= (BaseFood) new BaseFood("Hot Dog", 20, 20F, false,64, new PotionEffect(Potion.moveSpeed.id, 150, 0)).setCreativeTab(RandomMine.tab);
 	 GameRegistry.registerItem(itemHotDog, "itemHotDog");
 	 itemPickle= (BaseFood) new BaseFood("Pickle", 20, 20F, true,64, new PotionEffect(Potion.moveSpeed.id, 150, 0)).setCreativeTab(RandomMine.tab);

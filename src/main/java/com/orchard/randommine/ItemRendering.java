@@ -31,6 +31,13 @@ public class ItemRendering {
 	registerItemRendering("PurpleArmor_boots");
 	registerItemRendering("PurpleArmor_body");
 <<<<<<< HEAD
+	registerItemRendering("PurpleArmor_head");
+	registerItemRendering("EmeraldArmor_leggins");
+	registerItemRendering("EmeraldArmor_boots");
+	registerItemRendering("EmeraldArmor_body");
+	registerItemRendering("EmeraldArmor_head");
+=======
+<<<<<<< HEAD
 	registerItemRendering("PurpleArmor_helmet");
 	registerItemRendering("BlockFaceSilly");
 	registerItemRendering("BlockMustyApple");
@@ -46,6 +53,7 @@ public class ItemRendering {
 	registerItemRendering("Techno_Armor_body");
 	registerItemRendering("Techno_Armor_head");
 >>>>>>> UmWhat
+>>>>>>> master
 //github.com/ORCHARD-Minecraft-Mod-Class/mod-repo-test.git
 	}
 }
