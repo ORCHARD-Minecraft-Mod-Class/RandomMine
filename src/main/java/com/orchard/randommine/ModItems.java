@@ -60,11 +60,11 @@ public class ModItems {
 		 GameRegistry.registerItem(itemHamburger, "Hamburger");
 		 
 		 itemBaconBurger= (BaseFood) new BaseFood("The Bacon Burger!", 	20, 20F, true,64, new PotionEffect(Potion.regeneration.id, 150, 0)).setCreativeTab(RandomMine.tab);
-		 GameRegistry.registerItem(itemBaconBurger, "The Bacon Burger!");
+		 GameRegistry.registerItem(itemBaconBurger, "The Bacon Burger");
 		 
 		 GameRegistry.registerItem( new ItemModPickaxe("ItemModPickaxe", MyMaterial), "ItemModPickaxe");
 		 
-		GameRegistry.registerItem(PurpleArmor.helmet, "PurpleArmor_head");
+		GameRegistry.registerItem(PurpleArmor.helmet, "PurpleArmor_helmet");
 		GameRegistry.registerItem(PurpleArmor.body, "PurpleArmor_body");
 		GameRegistry.registerItem(PurpleArmor.legs, "PurpleArmor_leggins");
 		GameRegistry.registerItem(PurpleArmor.boots, "PurpleArmor_boots");

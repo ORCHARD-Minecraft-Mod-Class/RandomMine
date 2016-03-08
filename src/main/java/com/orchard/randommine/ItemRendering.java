@@ -18,19 +18,22 @@ public class ItemRendering {
 	registerItemRendering("itemChoclatePie");
 	registerItemRendering("itemChocolate");
 	registerItemRendering("blockX");
-	registerItemRendering("blockSwordintheStone");
+	registerItemRendering("Sword in the Stone");
 	registerItemRendering("itemDimondfood");
-	registerItemRendering("BlockControlPanel");
+	registerItemRendering("Control Panel");
 	registerItemRendering("itemBedrockBreak");
 	//registerItemRendering("BlockBraker");
-	registerItemRendering("blockHotDog");
+	registerItemRendering("itemHotDog");
 	registerItemRendering("itemPickle");
-	registerItemRendering("itemHamburger");
-	registerItemRendering("itemBaconBurger");
+	registerItemRendering("Hamburger");
+	registerItemRendering("The Bacon Burger");
 	registerItemRendering("PurpleArmor_leggins");
 	registerItemRendering("PurpleArmor_boots");
 	registerItemRendering("PurpleArmor_body");
-	registerItemRendering(":PurpleArmor_head");
+	registerItemRendering("PurpleArmor_helmet");
+	registerItemRendering("BlockFaceSilly");
+	registerItemRendering("BlockMustyApple");
+	registerItemRendering("ItemModPickaxe");
 //github.com/ORCHARD-Minecraft-Mod-Class/mod-repo-test.git
 	}
 }
