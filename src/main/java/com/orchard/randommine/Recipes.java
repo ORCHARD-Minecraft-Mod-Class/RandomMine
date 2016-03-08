@@ -37,7 +37,16 @@ public class Recipes {
 				});
 			
 			//From http://minecraft.gamepedia.com/Mods/Creating_mods/Adding_a_recipe
-			GameRegistry.addRecipe(new ItemStack(Blocks.end_stone, 64), new Object[] { "W $", " S ", "s E", 'W', new ItemStack(Blocks.log, 1, 2), '$', Items.stick, 'S', Blocks.sand, 's', Blocks.sapling, 'E', Items.ender_pearl });
+			GameRegistry.addRecipe(new ItemStack(Blocks.end_stone, 64), new Object[] { 
+				"W $", 
+				" S ",
+				"s E", 
+				'W', new ItemStack(Blocks.log, 1, 2), 
+				'$', Items.stick, 
+				'S', Blocks.sand, 
+				's', Blocks.sapling, 
+				'E', Items.ender_pearl 
+			});
 			
 			GameRegistry.addRecipe(new ItemStack(ModBlocks.blockX, 1), new Object[] {
 				 "T T",
@@ -74,10 +83,46 @@ public class Recipes {
 				 'A', Blocks.redstone_block
 			   });	
 			
+			GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldArmor_head, 1), new Object[] {
+				 "eee",
+				 "e e",
+				 "   ",
+				 'e', Items.emerald,
+			   });	
+				
+			GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldArmor_head, 1), new Object[] {
+				 "   ",
+				 "eee",
+				 "e e",
+				 'e', Items.emerald,
+			   });	
 			
+			GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldArmor_body, 1), new Object[] {
+				 "e e",
+				 "eee",
+				 "eee",
+				 'e', Items.emerald,
+			   });	
 			
+			GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldArmor_leggins, 1), new Object[] {
+				 "eee",
+				 "e e",
+				 "e e",
+				 'e', Items.emerald,
+			   });	
 			
+			GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldArmor_boots, 1), new Object[] {
+				 "e e",
+				 "e e",
+				 "   ",
+				 'e', Items.emerald,
+			   });	
 			
-			
+			GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldArmor_boots, 1), new Object[] {
+				 "   ",
+				 "e e",
+				 "e e",
+				 'e', Items.emerald,
+			   });	
 	}
 }
