@@ -19,10 +19,6 @@ public class ModItems {
 	public static Item itemBaconBurger;
 	public static Item itemHotDog;
 	public static Item itemPickle;
-	public static Item EmeraldArmor_head;
-	public static Item EmeraldArmor_body;
-	public static Item EmeraldArmor_leggins;
-	public static Item EmeraldArmor_boots;
 	public static ToolMaterial pic;
 
 	
@@ -84,7 +80,6 @@ public class ModItems {
 		GameRegistry.registerItem(DirtArmor.body, "DirtArmor_body");
 		GameRegistry.registerItem(DirtArmor.legs, "DirtArmor_leggins");
 		GameRegistry.registerItem(DirtArmor.boots, "DirtArmor_boots");
-		 
 		GameRegistry.registerItem(EmeraldArmor.helmet, "EmeraldArmor_head");
 		GameRegistry.registerItem(EmeraldArmor.body, "EmeraldArmor_body");
 		GameRegistry.registerItem(EmeraldArmor.legs, "EmeraldArmor_leggins");
