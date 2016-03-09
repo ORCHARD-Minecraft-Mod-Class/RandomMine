@@ -1,5 +1,7 @@
 package com.orchard.randommine;
 
+import com.orchard.randommine.armor.KnightArmor;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -50,5 +52,9 @@ public class ItemRendering {
 	registerItemRendering("Techno_Armor_boots");
 	registerItemRendering("Techno_Armor_body");
 	registerItemRendering("Techno_Armor_head");
+	registerItemRendering("KnightArmor_head");
+	registerItemRendering("KnightArmor_body");
+	registerItemRendering("KnightArmor_leggins");
+	registerItemRendering("KnightArmor_boots");
 	}
 }
