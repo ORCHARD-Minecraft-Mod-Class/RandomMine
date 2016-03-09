@@ -16,7 +16,6 @@ public class ItemRendering {
 	{
 	//This is where you render items that are entities on the ground.	
 	//example: "registerItemRendering("MyBlockName");
-<<<<<<< HEAD
 		registerItemRendering("blockChoclate");
 		registerItemRendering("itemChoclatePie");
 		registerItemRendering("itemChocolate");
@@ -37,37 +36,6 @@ public class ItemRendering {
 		registerItemRendering("BlockFaceSilly");
 		registerItemRendering("BlockMustyApple");
 		registerItemRendering("ItemModPickaxe");
-=======
-	registerItemRendering("blockChoclate");
-	registerItemRendering("itemChoclatePie");
-	registerItemRendering("itemChocolate");
-	registerItemRendering("blockX");
-	registerItemRendering("blockSwordintheStone");
-	registerItemRendering("itemDimondfood");
-	registerItemRendering("BlockControlPanel");
-	registerItemRendering("itemBedrockBreak");
-	//registerItemRendering("BlockBraker");
-	registerItemRendering("blockHotDog");
-	registerItemRendering("itemPickle");
-	registerItemRendering("itemHamburger");
-	registerItemRendering("itemBaconBurger");
-	registerItemRendering("PurpleArmor_leggins");
-	registerItemRendering("PurpleArmor_boots");
-	registerItemRendering("PurpleArmor_body");
-<<<<<<< HEAD
-	registerItemRendering("spelunkycape_head");
-	registerItemRendering("spelunkycape_leggins");
-	registerItemRendering("spelunkycape_boots");
-	registerItemRendering("spelunkycape_body");
-	registerItemRendering("spelunkycape_head");
-	
-	
-	}}
-//github.com/ORCHARD-Minecraft-Mod-Class/mod-repo-test.git
-=======
-<<<<<<< HEAD
-	registerItemRendering("PurpleArmor_head");
->>>>>>> 39efa332983a373e9762333c2585e8c989b3d079
 	registerItemRendering("DirtArmor_leggins");
 	registerItemRendering("DirtArmor_boots");
 	registerItemRendering("DirtArmor_body");
@@ -88,6 +56,10 @@ public class ItemRendering {
 	registerItemRendering("KnightArmor_body");
 	registerItemRendering("KnightArmor_leggins");
 	registerItemRendering("KnightArmor_boots");
+		registerItemRendering("spelunkycape_head");
+	registerItemRendering("spelunkycape_leggins");
+	registerItemRendering("spelunkycape_boots");
+	registerItemRendering("spelunkycape_body");
+	registerItemRendering("spelunkycape_head");
 	}
 }
->>>>>>> master
