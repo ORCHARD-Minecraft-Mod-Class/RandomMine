@@ -30,27 +30,19 @@ public class ItemRendering {
 	registerItemRendering("PurpleArmor_leggins");
 	registerItemRendering("PurpleArmor_boots");
 	registerItemRendering("PurpleArmor_body");
-<<<<<<< HEAD
-	registerItemRendering("PurpleArmor_head");
 	registerItemRendering("DirtArmor_leggins");
 	registerItemRendering("DirtArmor_boots");
 	registerItemRendering("DirtArmor_body");
 	registerItemRendering("DirtArmor_head");
-=======
-<<<<<<< HEAD
 	registerItemRendering("PurpleArmor_head");
 	registerItemRendering("EmeraldArmor_leggins");
 	registerItemRendering("EmeraldArmor_boots");
 	registerItemRendering("EmeraldArmor_body");
 	registerItemRendering("EmeraldArmor_head");
-=======
-<<<<<<< HEAD
 	registerItemRendering("PurpleArmor_helmet");
 	registerItemRendering("BlockFaceSilly");
 	registerItemRendering("BlockMustyApple");
 	registerItemRendering("ItemModPickaxe");
-=======
-	registerItemRendering("PurpleArmor_head");
 	registerItemRendering("Minion_Armor_leggins");
 	registerItemRendering("Minion_Armor_boots");
 	registerItemRendering("Minion_Armor_body");
@@ -59,9 +51,5 @@ public class ItemRendering {
 	registerItemRendering("Techno_Armor_boots");
 	registerItemRendering("Techno_Armor_body");
 	registerItemRendering("Techno_Armor_head");
->>>>>>> UmWhat
->>>>>>> master
->>>>>>> a081d6b03f827463b557619a2e7e9ac34d449c1d
-//github.com/ORCHARD-Minecraft-Mod-Class/mod-repo-test.git
 	}
 }
