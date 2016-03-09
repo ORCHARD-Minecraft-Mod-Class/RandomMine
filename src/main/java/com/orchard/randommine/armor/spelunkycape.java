@@ -25,7 +25,7 @@ public void registerRenderers(){}
 
 
 static{
-ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("PURPLEARMOR", "PurpleArmor", 25, new int[] {2, 7, 5, 3}, 42);
+ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("SPELUNKYCAPE", "spelunkycape", 25, new int[] {2, 7, 5, 3}, 42);
 
 int armorPreffix = 0;
 helmet = (new ItemArmor(enuma, armorPreffix, 0){public void onArmorTick(World world, EntityPlayer entity, ItemStack itemStack){

@@ -1,7 +1,5 @@
 package com.orchard.randommine;
 
-import com.orchard.randommine.armor.KnightArmor;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
