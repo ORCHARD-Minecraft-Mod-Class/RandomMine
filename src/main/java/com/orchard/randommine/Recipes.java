@@ -2,6 +2,7 @@ package com.orchard.randommine;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import com.orchard.randommine.armor.*;
@@ -84,46 +85,49 @@ public class Recipes {
 				 'A', Blocks.redstone_block
 			   });	
 			
-			GameRegistry.addRecipe(new ItemStack(EmeraldArmor.helmet, 1), new Object[] {
+		  addarmor(EmeraldArmor.helmet,EmeraldArmor.body,EmeraldArmor.legs,EmeraldArmor.boots,Items.emerald);
+	}
+	static void addarmor(Item hat,Item body,Item leg,Item boot,Object ino){
+		GameRegistry.addRecipe(new ItemStack(hat, 1), new Object[] {
 				 "eee",
 				 "e e",
 				 "   ",
-				 'e', Items.emerald,
+				 'e', ino,
 			   });	
 				
-			GameRegistry.addRecipe(new ItemStack(EmeraldArmor.helmet, 1), new Object[] {
+			GameRegistry.addRecipe(new ItemStack(hat, 1), new Object[] {
 				 "   ",
 				 "eee",
 				 "e e",
-				 'e', Items.emerald,
+				 'e', ino,
 			   });	
 			
-			GameRegistry.addRecipe(new ItemStack(EmeraldArmor.body, 1), new Object[] {
+			GameRegistry.addRecipe(new ItemStack(body, 1), new Object[] {
 				 "e e",
 				 "eee",
 				 "eee",
-				 'e', Items.emerald,
+				 'e', ino,
 			   });	
 			
-			GameRegistry.addRecipe(new ItemStack(EmeraldArmor.legs, 1), new Object[] {
+			GameRegistry.addRecipe(new ItemStack(leg, 1), new Object[] {
 				 "eee",
 				 "e e",
 				 "e e",
-				 'e', Items.emerald,
+				 'e', ino,
 			   });	
 			
-			GameRegistry.addRecipe(new ItemStack(EmeraldArmor.boots, 1), new Object[] {
+			GameRegistry.addRecipe(new ItemStack(boot, 1), new Object[] {
 				 "e e",
 				 "e e",
 				 "   ",
-				 'e', Items.emerald,
+				 'e', ino,
 			   });	
 			
-			GameRegistry.addRecipe(new ItemStack(EmeraldArmor.boots, 1), new Object[] {
+			GameRegistry.addRecipe(new ItemStack(boot, 1), new Object[] {
 				 "   ",
 				 "e e",
 				 "e e",
-				 'e', Items.emerald,
-			   });	
+				 'e', ino,
+			   });
 	}
 }
