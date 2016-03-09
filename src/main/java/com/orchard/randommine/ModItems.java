@@ -68,6 +68,13 @@ public class ModItems {
 		GameRegistry.registerItem(PurpleArmor.body, "PurpleArmor_body");
 		GameRegistry.registerItem(PurpleArmor.legs, "PurpleArmor_leggins");
 		GameRegistry.registerItem(PurpleArmor.boots, "PurpleArmor_boots");
+<<<<<<< HEAD
+		
+		GameRegistry.registerItem(spelunkycape.helmet, "spelunkycape_head");
+		GameRegistry.registerItem(spelunkycape.body, "spelunkycape_body");
+		GameRegistry.registerItem(spelunkycape.legs, "spelunkycape_leggins");
+		GameRegistry.registerItem(spelunkycape.boots, "spelunkycape_boots");
+=======
 				GameRegistry.registerItem(Minion_Armor.helmet, "Minion_Armor_head");
 		GameRegistry.registerItem(Minion_Armor.body, "Minion_Armor_body");
 		GameRegistry.registerItem(Minion_Armor.legs, "Minion_Armor_leggins");
@@ -80,6 +87,11 @@ public class ModItems {
 		GameRegistry.registerItem(DirtArmor.body, "DirtArmor_body");
 		GameRegistry.registerItem(DirtArmor.legs, "DirtArmor_leggins");
 		GameRegistry.registerItem(DirtArmor.boots, "DirtArmor_boots");
+<<<<<<< HEAD
+=======
+>>>>>>> master
+		 
+>>>>>>> 39efa332983a373e9762333c2585e8c989b3d079
 		GameRegistry.registerItem(EmeraldArmor.helmet, "EmeraldArmor_head");
 		GameRegistry.registerItem(EmeraldArmor.body, "EmeraldArmor_body");
 		GameRegistry.registerItem(EmeraldArmor.legs, "EmeraldArmor_leggins");
