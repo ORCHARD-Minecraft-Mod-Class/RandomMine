@@ -4,6 +4,7 @@ import java.util.Random;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
+import net.minecraft.block.BlockDispenser;
 import net.minecraft.block.BlockPistonBase;
 import net.minecraft.block.BlockSourceImpl;
 import net.minecraft.block.material.Material;
@@ -18,6 +19,7 @@ import net.minecraft.dispenser.IBehaviorDispenseItem;
 import net.minecraft.dispenser.IBlockSource;
 import net.minecraft.dispenser.IPosition;
 import net.minecraft.dispenser.PositionImpl;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
@@ -32,14 +34,15 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockBraker extends BlockContainer
+public class BlockPlacer extends BlockContainer
 {
+	Entity en;
     public static final PropertyDirection FACING = PropertyDirection.create("facing");
     public static final PropertyBool TRIGGERED = PropertyBool.create("triggered");
     /** Registry for all dispense behaviors. */
     public static final RegistryDefaulted dispenseBehaviorRegistry = new RegistryDefaulted(new BehaviorDefaultDispenseItem());
     protected Random rand = new Random();
-    protected BlockBraker()
+    public BlockPlacer()
     {
         super(Material.rock);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(TRIGGERED, Boolean.valueOf(false)));
@@ -97,6 +100,7 @@ public class BlockBraker extends BlockContainer
 
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumFacing side, float hitX, float hitY, float hitZ)
     {
+    	
         if (worldIn.isRemote)
         {
             return true;
@@ -122,7 +126,7 @@ public class BlockBraker extends BlockContainer
         if (tileentitydispenser != null)
         {
             int i = tileentitydispenser.getDispenseSlot();
-
+            	
             if (i < 0)
             {
                 worldIn.playAuxSFX(1001, pos, 0);
@@ -134,8 +138,16 @@ public class BlockBraker extends BlockContainer
 
                 if (ibehaviordispenseitem != IBehaviorDispenseItem.itemDispenseBehaviorProvider)
                 {
-                    ItemStack itemstack1 = ibehaviordispenseitem.dispense(blocksourceimpl, itemstack);
-                    tileentitydispenser.setInventorySlotContents(i, itemstack1.stackSize == 0 ? null : itemstack1);
+                	try{
+                	    IPosition iposition = BlockDispenser.getDispensePosition(blocksourceimpl);
+                	    BlockPos pos1 = new BlockPos(iposition.getX(), iposition.getY(), iposition.getZ());
+                		Block block = Block.getBlockFromItem(itemstack.getItem());
+                		if (worldIn.canBlockBePlaced(block,pos1,true,BlockPistonBase.getFacing(1),en,itemstack)){
+                	ItemStack itemstack1 = this.dispenseStack(blocksourceimpl, itemstack, worldIn);
+                    this.playDispenseSound(blocksourceimpl);
+                    if (block.getStateFromMeta(itemstack1.getMetadata())==worldIn.getBlockState(pos1))tileentitydispenser.setInventorySlotContents(i, itemstack1.stackSize == 0 ? null : itemstack1);
+                	    }}
+                	    catch (Exception e) {}
                 }
             }
         }
@@ -289,4 +301,24 @@ public class BlockBraker extends BlockContainer
     {
         return new BlockState(this, new IProperty[] {FACING, TRIGGERED});
     }
+
+protected void playDispenseSound(IBlockSource source)
+{
+    source.getWorld().playAuxSFX(1000, source.getBlockPos(), 0);
+}
+protected ItemStack dispenseStack(IBlockSource source, ItemStack stack,World worldIn)
+{ 
+	try{
+    IPosition iposition = BlockDispenser.getDispensePosition(source);
+    ItemStack itemstack1 = stack.splitStack(1);
+    BlockPos pos = new BlockPos(iposition.getX(), iposition.getY(), iposition.getZ());
+	Block block;
+	block = Block.getBlockFromItem(itemstack1.getItem());
+    if( worldIn.canBlockBePlaced(block,pos,true,BlockPistonBase.getFacing(1),en,itemstack1)){
+    worldIn.setBlockState(pos, block.getStateFromMeta(itemstack1.getMetadata()));
+    }}
+	catch (Exception e) {return stack;}
+
+    return stack;
+}
 }

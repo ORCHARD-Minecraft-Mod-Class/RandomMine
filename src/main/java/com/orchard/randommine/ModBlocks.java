@@ -16,6 +16,7 @@ public class ModBlocks {
 	public static BlockSwordintheStone blockSwordintheStone;
 	public static BlockControlPanel BlockControlPanel;
 	public static BlockMustyApple BlockMustyApple;
+	public static BlockPlacer BlockPlacer;
 	
 	
     public static void preInitCommon() {
@@ -42,6 +43,8 @@ public class ModBlocks {
 
     	BlockMustyApple = (BlockMustyApple) new BlockMustyApple().setUnlocalizedName("BlockMustyApple").setCreativeTab(RandomMine.tab);   	
     	GameRegistry.registerBlock(BlockMustyApple, "BlockMustyApple");
+    	BlockPlacer  = (BlockPlacer) new BlockPlacer().setUnlocalizedName("BlockPlacer");
+    	GameRegistry.registerBlock(BlockPlacer, "BlockPlacer");
     	
     	//BlockBraker = (BlockBraker) new BlockBraker().setUnlocalizedName("Braker").setCreativeTab(RandomMine.tab);   	
     	//GameRegistry.registerBlock(BlockBraker, "BlockBraker");

@@ -59,5 +59,6 @@ public class ItemRendering {
 	registerItemRendering("spelunkycape_boots");
 	registerItemRendering("spelunkycape_body");
 	registerItemRendering("spelunkycape_head");
+	registerItemRendering("BlockPlacer");
 	}
 }
