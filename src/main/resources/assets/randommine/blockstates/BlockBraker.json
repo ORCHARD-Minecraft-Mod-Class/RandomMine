@@ -1,10 +1,18 @@
+
 {
     "variants": {
-        "facing=down":  { "model": "randommine:BlockBraker_vertical", "x": 180 },
-        "facing=up":    { "model": "randommine:BlockBraker_vertical" },
-        "facing=north": { "model": "randommine:BlockBraker" },
-        "facing=south": { "model": "randommine:BlockBraker", "y": 180 },
-        "facing=west":  { "model": "randommine:BlockBraker", "y": 270 },
-        "facing=east":  { "model": "randommine:BlockBraker", "y": 90 }
+
+        "facing=down,triggered=false":  { "model": "randommine:BlockBraker_vertical", "x": 180 },
+        "facing=up,triggered=false":    { "model": "randommine:BlockBraker_vertical" },
+        "facing=north,triggered=false": { "model": "randommine:BlockBraker" },
+        "facing=south,triggered=false": { "model": "randommine:BlockBraker", "y": 180 },
+        "facing=west,triggered=false":  { "model": "randommine:BlockBraker", "y": 270 },
+        "facing=east,triggered=false":  { "model": "randommine:BlockBraker", "y": 90 },
+        "facing=down,triggered=true":  { "model": "randommine:BlockBraker_vertical", "x": 180 },
+        "facing=up,triggered=true":    { "model": "randommine:BlockBraker_vertical" },
+        "facing=north,triggered=true": { "model": "randommine:BlockBraker" },
+        "facing=south,triggered=true": { "model": "randommine:BlockBraker", "y": 180 },
+        "facing=west,triggered=true":  { "model": "randommine:BlockBraker", "y": 270 },
+        "facing=east,triggered=true":  { "model": "randommine:BlockBraker", "y": 90 }
     }
 }

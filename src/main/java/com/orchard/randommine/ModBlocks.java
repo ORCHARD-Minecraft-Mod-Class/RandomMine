@@ -46,8 +46,8 @@ public class ModBlocks {
     	BlockPlacer  = (BlockPlacer) new BlockPlacer().setUnlocalizedName("BlockPlacer");
     	GameRegistry.registerBlock(BlockPlacer, "BlockPlacer");
     	
-    	//BlockBraker = (BlockBraker) new BlockBraker().setUnlocalizedName("Braker").setCreativeTab(RandomMine.tab);   	
-    	//GameRegistry.registerBlock(BlockBraker, "BlockBraker");
+    	BlockBraker = (BlockBraker) new BlockBraker().setUnlocalizedName("Braker").setCreativeTab(RandomMine.tab);   	
+    	GameRegistry.registerBlock(BlockBraker, "BlockBraker");
     	
     	
     	

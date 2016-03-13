@@ -36,6 +36,10 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockPlacer extends BlockContainer
 {
+    /**
+     * this places Block.
+     *sorry it is so messy it is the dispenser changed up.
+     */
 	Entity en;
     public static final PropertyDirection FACING = PropertyDirection.create("facing");
     public static final PropertyBool TRIGGERED = PropertyBool.create("triggered");
@@ -108,7 +112,9 @@ public class BlockPlacer extends BlockContainer
         else
         {
             TileEntity tileentity = worldIn.getTileEntity(pos);
-
+            BlockSourceImpl blocksourceimpl = new BlockSourceImpl(worldIn, pos);
+            TileEntityDispenser tileentitydispenser = (TileEntityDispenser)blocksourceimpl.getBlockTileEntity();
+            tileentitydispenser.setCustomName("Block Placer");
             if (tileentity instanceof TileEntityDispenser)
             {
                 playerIn.displayGUIChest((TileEntityDispenser)tileentity);
@@ -144,7 +150,7 @@ public class BlockPlacer extends BlockContainer
                 		Block block = Block.getBlockFromItem(itemstack.getItem());
                 		if (worldIn.canBlockBePlaced(block,pos1,true,BlockPistonBase.getFacing(1),en,itemstack)){
                 	ItemStack itemstack1 = this.dispenseStack(blocksourceimpl, itemstack, worldIn);
-                    this.playDispenseSound(blocksourceimpl);
+                	worldIn.playSoundEffect(iposition.getX(), iposition.getY(), iposition.getZ(), block.stepSound.getPlaceSound(), 1.0f, 1.0f);
                     if (block.getStateFromMeta(itemstack1.getMetadata())==worldIn.getBlockState(pos1))tileentitydispenser.setInventorySlotContents(i, itemstack1.stackSize == 0 ? null : itemstack1);
                 	    }}
                 	    catch (Exception e) {}
@@ -302,10 +308,6 @@ public class BlockPlacer extends BlockContainer
         return new BlockState(this, new IProperty[] {FACING, TRIGGERED});
     }
 
-protected void playDispenseSound(IBlockSource source)
-{
-    source.getWorld().playAuxSFX(1000, source.getBlockPos(), 0);
-}
 protected ItemStack dispenseStack(IBlockSource source, ItemStack stack,World worldIn)
 { 
 	try{

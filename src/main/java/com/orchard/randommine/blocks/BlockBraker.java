@@ -4,6 +4,7 @@ import java.util.Random;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
+import net.minecraft.block.BlockDispenser;
 import net.minecraft.block.BlockPistonBase;
 import net.minecraft.block.BlockSourceImpl;
 import net.minecraft.block.material.Material;
@@ -18,10 +19,12 @@ import net.minecraft.dispenser.IBehaviorDispenseItem;
 import net.minecraft.dispenser.IBlockSource;
 import net.minecraft.dispenser.IPosition;
 import net.minecraft.dispenser.PositionImpl;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.InventoryHelper;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityDispenser;
@@ -34,12 +37,17 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockBraker extends BlockContainer
 {
+    /**
+     * this removes a Block.
+     *sorry it is so messy it is the dispenser changed up.
+     */
+	Entity en;
     public static final PropertyDirection FACING = PropertyDirection.create("facing");
     public static final PropertyBool TRIGGERED = PropertyBool.create("triggered");
     /** Registry for all dispense behaviors. */
     public static final RegistryDefaulted dispenseBehaviorRegistry = new RegistryDefaulted(new BehaviorDefaultDispenseItem());
     protected Random rand = new Random();
-    protected BlockBraker()
+    public BlockBraker()
     {
         super(Material.rock);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(TRIGGERED, Boolean.valueOf(false)));
@@ -97,6 +105,7 @@ public class BlockBraker extends BlockContainer
 
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumFacing side, float hitX, float hitY, float hitZ)
     {
+    	
         if (worldIn.isRemote)
         {
             return true;
@@ -104,7 +113,9 @@ public class BlockBraker extends BlockContainer
         else
         {
             TileEntity tileentity = worldIn.getTileEntity(pos);
-
+            BlockSourceImpl blocksourceimpl = new BlockSourceImpl(worldIn, pos);
+            TileEntityDispenser tileentitydispenser = (TileEntityDispenser)blocksourceimpl.getBlockTileEntity();
+            tileentitydispenser.setCustomName("Block Braker");
             if (tileentity instanceof TileEntityDispenser)
             {
                 playerIn.displayGUIChest((TileEntityDispenser)tileentity);
@@ -114,15 +125,12 @@ public class BlockBraker extends BlockContainer
         }
     }
 
-    protected void dispense(World worldIn, BlockPos pos)
+	protected void dispense(World worldIn, BlockPos pos)
     {
         BlockSourceImpl blocksourceimpl = new BlockSourceImpl(worldIn, pos);
         TileEntityDispenser tileentitydispenser = (TileEntityDispenser)blocksourceimpl.getBlockTileEntity();
-
-        if (tileentitydispenser != null)
-        {
             int i = tileentitydispenser.getDispenseSlot();
-
+            	
             if (i < 0)
             {
                 worldIn.playAuxSFX(1001, pos, 0);
@@ -134,9 +142,38 @@ public class BlockBraker extends BlockContainer
 
                 if (ibehaviordispenseitem != IBehaviorDispenseItem.itemDispenseBehaviorProvider)
                 {
-                    ItemStack itemstack1 = ibehaviordispenseitem.dispense(blocksourceimpl, itemstack);
-                    tileentitydispenser.setInventorySlotContents(i, itemstack1.stackSize == 0 ? null : itemstack1);
-                }
+                		boolean mach = false;
+                		int slot = 0;
+                		
+                		int numberi = 0;
+                	    IPosition iposition = BlockDispenser.getDispensePosition(blocksourceimpl);
+                	    BlockPos pos1 = new BlockPos(iposition.getX(), iposition.getY(), iposition.getZ());
+						for(int j=0;j<9;j++){
+							try{
+                			if(tileentitydispenser.getStackInSlot(j).getItem().getUnlocalizedName()==Item.getItemFromBlock(worldIn.getBlockState(pos1).getBlock()).getUnlocalizedName()){//&&tileentitydispenser.getStackInSlot(j).getMaxStackSize() < tileentitydispenser.getStackInSlot(j).stackSize){
+                			mach = true;
+                			slot = j;
+                			numberi = tileentitydispenser.getStackInSlot(j).stackSize;
+                			System.out.println(numberi+"-"+tileentitydispenser.getStackInSlot(j).stackSize);
+                			ItemStack sp = ItemStack.copyItemStack(tileentitydispenser.getStackInSlot(0));
+                			System.out.println(sp.stackSize);
+                			}
+							}catch (Exception e) {
+                			if(mach==false&&Item.getItemFromBlock(worldIn.getBlockState(pos1).getBlock()).getUnlocalizedName()!="air"){
+                			mach = true;
+                			slot = j;
+                			}}
+                		}
+                		if(mach){
+                	try{
+					System.out.println(slot);
+                     ItemStack stack = new ItemStack(worldIn.getBlockState(pos1).getBlock(),numberi+2);
+                    worldIn.setBlockToAir(pos1);
+                    worldIn.playSoundEffect(iposition.getX(), iposition.getY(), iposition.getZ(), worldIn.getBlockState(pos1).getBlock().stepSound.getBreakSound(), 1.0f, 1.0f);
+                    tileentitydispenser.setInventorySlotContents(slot, stack);
+                		}catch (Exception e) {System.out.println(e);}
+                	    }
+                
             }
         }
     }
@@ -289,4 +326,5 @@ public class BlockBraker extends BlockContainer
     {
         return new BlockState(this, new IProperty[] {FACING, TRIGGERED});
     }
+
 }

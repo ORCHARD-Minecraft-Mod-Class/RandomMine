@@ -1,8 +1,8 @@
 {
     "parent": "block/orientable",
     "textures": {
-        "top": "blocks/furnace_top",
-        "front": "blocks/dispenser_front_horizontal",
-        "side": "blocks/furnace_side"
+        "top": "randommine:blocks/rfurnace_top",
+        "front": "randommine:blocks/rdispenser_front_horizontal",
+        "side": "randommine:blocks/rfurnace_side"
     }
 }
