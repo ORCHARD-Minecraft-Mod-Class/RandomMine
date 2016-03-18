@@ -159,9 +159,11 @@ public class BlockBraker extends BlockContainer
                 			System.out.println(sp.stackSize);
                 			}
 							}catch (Exception e) {
+								try{
                 			if(mach==false&&Item.getItemFromBlock(worldIn.getBlockState(pos1).getBlock()).getUnlocalizedName()!="air"){
                 			mach = true;
                 			slot = j;
+                			}}catch (Exception a) {
                 			}}
                 		}
                 		if(mach){
