@@ -1,7 +1,0 @@
-{
-    "parent": "block/orientable_vertical",
-    "textures": {
-        "front": "randommine:blocks/rdispenser_front_vertical",
-        "side": "randommine:blocks/rfurnace_top"
-    }
-}
