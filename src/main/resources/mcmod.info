@@ -1,0 +1,16 @@
+[
+{
+  "modid": "randommine",
+  "name": "RandomMine",
+  "description": "A mod that adds random stuff.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ParkerMc","PieCrafter314","CircuitLord","LOTRfan02"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
