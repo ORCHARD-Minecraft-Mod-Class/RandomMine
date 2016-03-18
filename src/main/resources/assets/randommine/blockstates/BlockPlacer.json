@@ -1,0 +1,12 @@
+
+{
+    "variants": {
+
+        "facing=down,triggered=false":  { "model": "randommine:BlockPlacer_vertical", "x": 180 },
+        "facing=up,triggered=false":    { "model": "randommine:BlockPlacer_vertical" },
+        "facing=north,triggered=false": { "model": "randommine:BlockPlacer" },
+        "facing=south,triggered=false": { "model": "randommine:BlockPlacer", "y": 180 },
+        "facing=west,triggered=false":  { "model": "randommine:BlockPlacer", "y": 270 },
+        "facing=east,triggered=false":  { "model": "randommine:BlockPlacer", "y": 90 }
+    }
+}

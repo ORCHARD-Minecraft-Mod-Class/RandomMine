@@ -2,8 +2,10 @@ package com.orchard.randommine;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import com.orchard.randommine.armor.*;
 
 public class Recipes {
 	public static void add()
@@ -37,7 +39,16 @@ public class Recipes {
 				});
 			
 			//From http://minecraft.gamepedia.com/Mods/Creating_mods/Adding_a_recipe
-			GameRegistry.addRecipe(new ItemStack(Blocks.end_stone, 64), new Object[] { "W $", " S ", "s E", 'W', new ItemStack(Blocks.log, 1, 2), '$', Items.stick, 'S', Blocks.sand, 's', Blocks.sapling, 'E', Items.ender_pearl });
+			GameRegistry.addRecipe(new ItemStack(Blocks.end_stone, 64), new Object[] { 
+				"W $", 
+				" S ",
+				"s E", 
+				'W', new ItemStack(Blocks.log, 1, 2), 
+				'$', Items.stick, 
+				'S', Blocks.sand, 
+				's', Blocks.sapling, 
+				'E', Items.ender_pearl 
+			});
 			
 			GameRegistry.addRecipe(new ItemStack(ModBlocks.blockX, 1), new Object[] {
 				 "T T",
@@ -83,9 +94,32 @@ public class Recipes {
 				 
 			   });	
 			
+			GameRegistry.addRecipe(new ItemStack(body, 1), new Object[] {
+				 "e e",
+				 "eee",
+				 "eee",
+				 'e', ino,
+			   });	
 			
+			GameRegistry.addRecipe(new ItemStack(leg, 1), new Object[] {
+				 "eee",
+				 "e e",
+				 "e e",
+				 'e', ino,
+			   });	
 			
+			GameRegistry.addRecipe(new ItemStack(boot, 1), new Object[] {
+				 "e e",
+				 "e e",
+				 "   ",
+				 'e', ino,
+			   });	
 			
-			
+			GameRegistry.addRecipe(new ItemStack(boot, 1), new Object[] {
+				 "   ",
+				 "e e",
+				 "e e",
+				 'e', ino,
+			   });
 	}
 }

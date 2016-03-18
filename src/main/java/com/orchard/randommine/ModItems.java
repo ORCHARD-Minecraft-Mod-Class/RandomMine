@@ -6,6 +6,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import com.orchard.randommine.items.*;
+import com.orchard.randommine.armor.*;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 
@@ -19,8 +20,10 @@ public class ModItems {
 	public static Item itemHotDog;
 	public static Item itemPickle;
 	public static ToolMaterial pic;
-	public static void preInitCommon() {
 
+	
+	
+	public static void preInitCommon() {
 	
 			//This is where you add your tool material types.
 			
@@ -57,13 +60,40 @@ public class ModItems {
 		 GameRegistry.registerItem(itemHamburger, "Hamburger");
 		 
 		 itemBaconBurger= (BaseFood) new BaseFood("The Bacon Burger!", 	20, 20F, true,64, new PotionEffect(Potion.regeneration.id, 150, 0)).setCreativeTab(RandomMine.tab);
-		 GameRegistry.registerItem(itemBaconBurger, "The Bacon Burger!");
+		 GameRegistry.registerItem(itemBaconBurger, "The Bacon Burger");
 		 
 		 GameRegistry.registerItem( new ItemModPickaxe("ItemModPickaxe", MyMaterial), "ItemModPickaxe");
 		 
-		 
+		GameRegistry.registerItem(PurpleArmor.helmet, "PurpleArmor_helmet");
+		GameRegistry.registerItem(PurpleArmor.body, "PurpleArmor_body");
+		GameRegistry.registerItem(PurpleArmor.legs, "PurpleArmor_leggins");
+		GameRegistry.registerItem(PurpleArmor.boots, "PurpleArmor_boots");
+				GameRegistry.registerItem(Minion_Armor.helmet, "Minion_Armor_head");
+		GameRegistry.registerItem(Minion_Armor.body, "Minion_Armor_body");
+		GameRegistry.registerItem(Minion_Armor.legs, "Minion_Armor_leggins");
+		GameRegistry.registerItem(Minion_Armor.boots, "Minion_Armor_boots");
+		GameRegistry.registerItem(Techno_Armor.helmet, "Techno_Armor_head");
+		GameRegistry.registerItem(Techno_Armor.body, "Techno_Armor_body");
+		GameRegistry.registerItem(Techno_Armor.legs, "Techno_Armor_leggins");
+		GameRegistry.registerItem(Techno_Armor.boots, "Techno_Armor_boots");
+		GameRegistry.registerItem(DirtArmor.helmet, "DirtArmor_head");
+		GameRegistry.registerItem(DirtArmor.body, "DirtArmor_body");
+		GameRegistry.registerItem(DirtArmor.legs, "DirtArmor_leggins");
+		GameRegistry.registerItem(DirtArmor.boots, "DirtArmor_boots");
+		GameRegistry.registerItem(EmeraldArmor.helmet, "EmeraldArmor_head");
+		GameRegistry.registerItem(EmeraldArmor.body, "EmeraldArmor_body");
+		GameRegistry.registerItem(EmeraldArmor.legs, "EmeraldArmor_leggins");
+		GameRegistry.registerItem(EmeraldArmor.boots, "EmeraldArmor_boots");
+		GameRegistry.registerItem(KnightArmor.helmet, "KnightArmor_head");
+		GameRegistry.registerItem(KnightArmor.body, "KnightArmor_body");
+		GameRegistry.registerItem(KnightArmor.legs, "KnightArmor_leggins");
+		GameRegistry.registerItem(KnightArmor.boots, "KnightArmor_boots");
 	 itemHotDog= (BaseFood) new BaseFood("Hot Dog", 20, 20F, false,64, new PotionEffect(Potion.moveSpeed.id, 150, 0)).setCreativeTab(RandomMine.tab);
 	 GameRegistry.registerItem(itemHotDog, "itemHotDog");
 	 itemPickle= (BaseFood) new BaseFood("Pickle", 20, 20F, true,64, new PotionEffect(Potion.moveSpeed.id, 150, 0)).setCreativeTab(RandomMine.tab);
 	 GameRegistry.registerItem(itemPickle, "itemPickle");
-	 }}
+		GameRegistry.registerItem(spelunkycape.helmet, "spelunkycape_head");
+		GameRegistry.registerItem(spelunkycape.body, "spelunkycape_body");
+		GameRegistry.registerItem(spelunkycape.legs, "spelunkycape_leggins");
+		GameRegistry.registerItem(spelunkycape.boots, "spelunkycape_boots");
+	}}

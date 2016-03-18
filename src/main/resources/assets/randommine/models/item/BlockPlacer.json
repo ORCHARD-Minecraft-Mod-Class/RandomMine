@@ -1,5 +1,5 @@
 {
-    "parent": "randommine:block/blockSwordintheStone",
+    "parent": "randommine:block/BlockPlacer",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

@@ -1,0 +1,7 @@
+{
+    "parent": "block/orientable_vertical",
+    "textures": {
+        "front": "blocks/rdispenser_front_vertical",
+        "side": "blocks/rfurnace_top"
+    }
+}

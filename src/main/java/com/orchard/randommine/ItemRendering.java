@@ -14,19 +14,51 @@ public class ItemRendering {
 	{
 	//This is where you render items that are entities on the ground.	
 	//example: "registerItemRendering("MyBlockName");
-	registerItemRendering("blockChoclate");
-	registerItemRendering("itemChoclatePie");
-	registerItemRendering("itemChocolate");
-	registerItemRendering("blockX");
-	registerItemRendering("blockSwordintheStone");
-	registerItemRendering("itemDimondfood");
-	registerItemRendering("BlockControlPanel");
-	registerItemRendering("itemBedrockBreak");
-	//registerItemRendering("BlockBraker");
-	registerItemRendering("blockHotDog");
-	registerItemRendering("itemPickle");
-	registerItemRendering("itemHamburger");
-	registerItemRendering("itemBaconBurger");
-//github.com/ORCHARD-Minecraft-Mod-Class/mod-repo-test.git
+		registerItemRendering("blockChoclate");
+		registerItemRendering("itemChoclatePie");
+		registerItemRendering("itemChocolate");
+		registerItemRendering("blockX");
+		registerItemRendering("Sword in the Stone");
+		registerItemRendering("itemDimondfood");
+		registerItemRendering("Control Panel");
+		registerItemRendering("itemBedrockBreak");
+		//registerItemRendering("BlockBraker");
+		registerItemRendering("itemHotDog");
+		registerItemRendering("itemPickle");
+		registerItemRendering("Hamburger");
+		registerItemRendering("The Bacon Burger");
+		registerItemRendering("PurpleArmor_leggins");
+		registerItemRendering("PurpleArmor_boots");
+		registerItemRendering("PurpleArmor_body");
+		registerItemRendering("PurpleArmor_helmet");
+		registerItemRendering("BlockFaceSilly");
+		registerItemRendering("BlockMustyApple");
+		registerItemRendering("ItemModPickaxe");
+	registerItemRendering("DirtArmor_leggins");
+	registerItemRendering("DirtArmor_boots");
+	registerItemRendering("DirtArmor_body");
+	registerItemRendering("DirtArmor_head");
+	registerItemRendering("EmeraldArmor_leggins");
+	registerItemRendering("EmeraldArmor_boots");
+	registerItemRendering("EmeraldArmor_body");
+	registerItemRendering("EmeraldArmor_head");
+	registerItemRendering("Minion_Armor_leggins");
+	registerItemRendering("Minion_Armor_boots");
+	registerItemRendering("Minion_Armor_body");
+	registerItemRendering("Minion_Armor_head");
+	registerItemRendering("Techno_Armor_leggins");
+	registerItemRendering("Techno_Armor_boots");
+	registerItemRendering("Techno_Armor_body");
+	registerItemRendering("Techno_Armor_head");
+	registerItemRendering("KnightArmor_head");
+	registerItemRendering("KnightArmor_body");
+	registerItemRendering("KnightArmor_leggins");
+	registerItemRendering("KnightArmor_boots");
+		registerItemRendering("spelunkycape_head");
+	registerItemRendering("spelunkycape_leggins");
+	registerItemRendering("spelunkycape_boots");
+	registerItemRendering("spelunkycape_body");
+	registerItemRendering("spelunkycape_head");
+	registerItemRendering("BlockPlacer");
 	}
 }
