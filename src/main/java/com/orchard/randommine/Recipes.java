@@ -74,6 +74,14 @@ public class Recipes {
 				 'A', Blocks.redstone_block
 			   });	
 			
+		  GameRegistry.addRecipe(new ItemStack(ModItems.itemHamburger, 1), new Object[] {
+				 "PPP",
+				 "AAA",
+				 "PPP",
+				 'P', Items.bread,
+				 'A', Items.cooked_beef,
+				 
+			   });	
 			
 			
 			

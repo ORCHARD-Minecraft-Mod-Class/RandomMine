@@ -31,7 +31,7 @@ public class ModItems {
 				//Replace 4.0F with the damage value (3.0F is diamond tool)
 				//Replace the 5 with the enchantibility level of the tool (diamond is 10)
 				ToolMaterial MyMaterial = EnumHelper.addToolMaterial("MyMaterial", 1, 2, 3.0F, 4.0F, 5);
-	
+				ToolMaterial StrangePickaxe = EnumHelper.addToolMaterial("StrangePickaxe", 3, 5000, 10.0F, 1000000.0F, 20);
 	
 	
 	
