@@ -11,8 +11,8 @@ import net.minecraft.creativetab.CreativeTabs;
 //MORE BACON!!!!!!!!
 // EVEN MORE BACON!!!!!!!!!!!!!!!
 //Wherever it says "BaseBlockCode" replace it with the name of your block, for example "MyBlock"
-public class BaseBlockCode extends Block{
-	public BaseBlockCode() {
+public class BaseBlockCodeMe extends Block{
+	public BaseBlockCodeMe() {
 		
 		
 //Hold down ctrl, then click on "rock" it will give you a full list of all the material types you can use.
@@ -24,7 +24,7 @@ public class BaseBlockCode extends Block{
 		
 		
 //This is the hardness of your block. For example, setting it to "(25.0F)" would make the block harder.
-		this.setHardness(10.0F);
+		this.setHardness(9.0F);
 
 		
 	
