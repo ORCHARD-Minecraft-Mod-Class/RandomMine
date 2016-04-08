@@ -32,7 +32,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockBraker extends BlockContainer
+public class RedStoneSword extends BlockContainer
 {
 	static String facing;
     public static final PropertyDirection FACING = PropertyDirection.create("facing");
@@ -40,7 +40,7 @@ public class BlockBraker extends BlockContainer
     /** Registry for all dispense behaviors. */
     public static final RegistryDefaulted dispenseBehaviorRegistry = new RegistryDefaulted(new BehaviorDefaultDispenseItem());
     protected Random rand = new Random();
-    public BlockBraker()
+    public RedStoneSword()
     {
         super(Material.rock);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(TRIGGERED, Boolean.valueOf(false)));
