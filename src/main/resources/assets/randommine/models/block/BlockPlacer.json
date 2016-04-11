@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "randommine:blocks/gfurnace_top",
+        "front": "randommine:blocks/gdispenser_front_horizontal",
+        "side": "randommine:blocks/gfurnace_side"
+    }
+}

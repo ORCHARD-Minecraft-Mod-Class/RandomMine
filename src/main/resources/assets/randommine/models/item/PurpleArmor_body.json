@@ -1,7 +1,7 @@
 {
 "parent": "builtin/generated",
 "textures": {
-"layer0": "randommine:items/DirtArmor_head"
+"layer0": "randommine:items/PurpleArmor_body"
 },
 "display": {
 "thirdperson": {

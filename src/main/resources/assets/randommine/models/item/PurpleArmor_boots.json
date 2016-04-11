@@ -1,7 +1,7 @@
 {
 "parent": "builtin/generated",
 "textures": {
-"layer0": "randommine:items/spelunkycape__helmet"
+"layer0": "randommine:items/PurpleArmor_boots"
 },
 "display": {
 "thirdperson": {
